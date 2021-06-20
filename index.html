@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <meta charset="utf-8">
+      <!--google font & ionic iconpacs CND -->
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!--<link href="https://fonts.googleapis.com/css?family=Supermercado+One|Ubuntu" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu|Wendy+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <script type="text/javascript" src="script.js"  src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="icon" href="favicon.png" type="image/gif" sizes="18x18"> 
+</head>
+
+<body id='body'>           
+    <div class="calculator">
+        <input type="text"  class="viewer" id="screen" placeholder="0" disabled></input><br>
+        <button class="option" onclick="onOff()" style="background-color: #d32f2f; "  onclick="off()" >OFF</button> 
+        <button class="option" onclick="clearAll()" style="background-color:#00c853;" >C</button>
+        <button class="option" onclick="deleteLastNum()" style="background-color:#fdd835;">DEL</button> 
+        <button value="7"  onclick="getNumber(7)">7</button>
+        <button value="8" onclick="getNumber(8)">8</button>
+        <button value="9" onclick="getNumber(9)">9</button>
+        <button value="plus" class="oprator" onclick="getOparator('plus')">+</button><br>
+        <button value="4" onclick="getNumber(4)">4</button>
+        <button value="5" onclick="getNumber(5)">5</button>
+        <button value="6" onclick="getNumber(6)">6</button>
+        <button value="minus" class="oprator" onclick="getOparator('minus')">&#x2212;</button><br>
+        <button value="1" onclick="getNumber(1)">1</button>
+        <button value="2" onclick="getNumber(2)">2</button>
+        <button value="3" onclick="getNumber(3)">3</button>
+        <button value="multiply" class="oprator" onclick="getOparator('multiply')"> &#x00D7;</button>
+        <button value="dot" onclick="getNumber('dot')">.</button>
+        <button value="0" onclick="getNumber(0)">0</button>
+        <button value="plusminus" onclick="getOparator('plusminus')">&#x00B1;</button>
+        <button value="division" class="oprator" onclick="getOparator('division')">&#247;</button>
+        <button class="equal" style="width: 67%" onclick="calculate()">=</button>
+        <button class="oprator" onclick="setBracket()">&#40; &#41;</button><br> 
+    </div>
+    <script>var screen = document.getElementById("screen");</script>
+</body>
+</html>
